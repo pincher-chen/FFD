@@ -10,3 +10,12 @@ The basin-hopping algorithm is an algorithm from stochastic global optimization 
 ## Tool to build force field input files
 https://github.com/agiliopadua/fftool  
 This is a tool to build force field input files for molecular dynamics.
+
+## Relevant work
+https://github.com/rociomer/DFT-derived-force-field  
+DFT-derived Force Field Parameters
+
+
+https://github.com/molmod/QuickFF  
+A Python code to quickly derive ab initio parameterized force fields.
+
