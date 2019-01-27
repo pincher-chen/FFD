@@ -19,3 +19,6 @@ DFT-derived Force Field Parameters
 https://github.com/molmod/QuickFF  
 A Python code to quickly derive ab initio parameterized force fields.
 
+http://upjv.q4md-forcefieldtools.org/RED/resp/
+The RESP (Restrained ElectroStatic Potential) program fits the quantum mechanically calculated molecular electrostatic potential (MEP) at molecular surfaces using an atom-centered point charge model. This method was developed primarily by Bayly. A quantum mechanical program such as Gaussian, Jaguar, GAMESS, or Firefly must be used to generate the MEP input(s) for RESP.
+
