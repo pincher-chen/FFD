@@ -17,7 +17,8 @@ DFT-derived Force Field Parameters
 
 
 https://github.com/molmod/QuickFF  
-A Python code to quickly derive ab initio parameterized force fields.
+A Python code to quickly derive ab initio parameterized force fields.  
+This url gives the detail functions of QuickFF:http://molmod.github.io/yaff/ug_forcefield.html
 
 https://github.com/cole-group/QUBEKit  
 QUBEKit is python based force field derivation toolkit that allows users to derive accurate molecular mechanics parameters directly from quantum mechanical calculations.
