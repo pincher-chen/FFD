@@ -1,0 +1,3 @@
+charmm.prm is forcefile parameters fitted by ourself, 
+which is need to assigned into CuMOF-porous.car/CuMOF-porous.mdf
+CuMOF-porous.data is finall output data.

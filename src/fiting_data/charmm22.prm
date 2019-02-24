@@ -1,0 +1,84 @@
+
+BONDS
+!
+!V(bond) = Kb(b - b0)**2
+!
+!Kb: kcal/mole/A**2
+!b0: A
+!
+!at1  at2        Kb         b0
+!
+C3_c1_n2 C4_c1_f3   337.395     1.4943
+C3_c2_n1 C3_c2_n1   401.826     1.4268
+C3_c2 H1_c   377.995     1.0942
+C3_c2 C3_c2_n1   477.100     1.4014
+C3_c1_n2 N3_c2_cu1   554.005     1.3474
+C3_c2_n1 N3_c2_cu1   429.139     1.3981
+C4_c1_f3 F1_c   388.016     1.3590
+CU2_nn N3_c2_cu1   137.637     1.8768
+
+
+ANGLES
+!
+!V(angle) = Ktheta(Theta - Theta0)**2
+!
+!V(Urey-Bradley) = Kub(S - S0)**2
+!
+!Ktheta: kcal/mole/rad**2
+!Theta0: degrees
+!Kub: kcal/mole/A**2 (Urey-Bradley)
+!S0: A
+!
+!at1  at2  at3    Ktheta     Theta0     Kub     S0
+!
+C3_c1_n2 C4_c1_f3 F1_c    83.065   111.5197
+F1_c C4_c1_f3 F1_c   110.159   106.7784
+C4_c1_f3 C3_c1_n2 N3_c2_cu1    50.017   122.2738
+N3_c2_cu1 C3_c1_n2 N3_c2_cu1    61.245   114.9450
+C3_c2_n1 C3_c2_n1 N3_c2_cu1    55.327   108.0553
+C3_c2 C3_c2_n1 N3_c2_cu1    55.456   129.7454
+C3_c2 C3_c2_n1 C3_c2_n1    57.097   122.5555
+C3_c2_n1 C3_c2 H1_c    33.065   123.0727
+C3_c2_n1 C3_c2 C3_c2_n1    69.877   114.6445
+C3_c1_n2 N3_c2_cu1 CU2_nn    17.668   128.9786
+C3_c2_n1 N3_c2_cu1 CU2_nn    22.388   126.6148
+C3_c1_n2 N3_c2_cu1 C3_c2_n1   113.305   104.3623
+
+
+DIHEDRALS
+!
+!V(dihedral) = Kchi(1 + cos(n(chi) - delta))
+!
+!Kchi: kcal/mole
+!n: multiplicity
+!delta: degrees
+!
+!at1  at2  at3  at4       Kchi  n    delta
+!
+F1_c C4_c1_f3 C3_c1_n2 N3_c2_cu1     0.1442  6   180.00
+C3_c2 C3_c2_n1 C3_c2_n1 N3_c2_cu1     2.1739  2   180.00
+C3_c2 C3_c2_n1 C3_c2_n1 C3_c2     0.9739  2   180.00
+H1_c C3_c2 C3_c2_n1 N3_c2_cu1     1.5784  2   180.00
+C3_c2_n1 C3_c2_n1 C3_c2 H1_c     2.7067  2   180.00
+C3_c2_n1 C3_c2 C3_c2_n1 N3_c2_cu1     4.2102  2   180.00
+C3_c2_n1 C3_c2 C3_c2_n1 C3_c2_n1     4.4272  2   180.00
+CU2_nn N3_c2_cu1 C3_c1_n2 N3_c2_cu1     0.0116  2   180.00
+C3_c2_n1 N3_c2_cu1 C3_c1_n2 C4_c1_f3     2.9483  2   180.00
+C3_c2_n1 N3_c2_cu1 C3_c1_n2 N3_c2_cu1     5.4952  2   180.00
+C3_c2_n1 C3_c2_n1 N3_c2_cu1 CU2_nn     1.8114  2   180.00
+C3_c2 C3_c2_n1 N3_c2_cu1 CU2_nn     0.4745  2   180.00
+C3_c1_n2 N3_c2_cu1 C3_c2_n1 C3_c2_n1    13.2609  2   180.00
+C3_c1_n2 N3_c2_cu1 C3_c2_n1 C3_c2     2.8586  2   180.00
+
+
+IMPROPER
+!
+!V(improper) = Kpsi(psi - psi0)**2
+!
+!Kpsi: kcal/mole/rad**2
+!psi0: degrees
+!note that the second column of numbers (0) is ignored
+!
+!at1  at2  at3  at4   Kpsi        psi0
+!
+
