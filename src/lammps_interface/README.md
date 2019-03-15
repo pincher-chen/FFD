@@ -1,12 +1,12 @@
 
 https://github.com/peteboyd/lammps_interface
-#right
+# right
 $ bash -x ../command.sh CuMOF-noprous-2cavity_40ST-mixed.cif 
 + python ../lammps_interface/lammps_interface.py CuMOF-noprous-2cavity_40ST-mixed.cif -ff UFF4MOF --molecule-ff UFF
 
 生成data/in文件
 
-#wrong
+# wrong
 稍微改了一下cif的结构，添加了一个苯乙烯分子，然后运行同样的脚本报错
 ```
 $ bash -x ../command.sh CuMOF-noprous-2cavity_40ST-mixed.cif 
