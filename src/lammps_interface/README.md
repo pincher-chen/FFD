@@ -1,4 +1,5 @@
 
+工具来源：  
 https://github.com/peteboyd/lammps_interface
 # right
 $ bash -x ../command.sh CuMOF-noprous-2cavity_40ST-mixed.cif 
