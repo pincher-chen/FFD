@@ -64,11 +64,11 @@ timestep distance_A_B
 
 伪代码
 ```
-读入4-db-msd-cu.lammpstrj
-遍历每个timestep的原子，获得原子中心A的xyz坐标
-读入4-db-msd-db.lammpstrj
-遍历每个timestep的原子，获得原子团的几何中心B的xyz坐标
-根据timestep,计算A与B的距离[（Ax - Bx）^2 + (Ay - By) + (Az - Bz)]开根号
-将结果写入文本msd.txt
+读入4-db-msd-cu.lammpstrj;
+遍历每个timestep的原子，获得原子中心A的xyz坐标;
+读入4-db-msd-db.lammpstrj;
+遍历每个timestep的原子，获得原子团的几何中心B的xyz坐标;
+根据timestep,计算A与B的距离[（Ax - Bx）^2 + (Ay - By) + (Az - Bz)]开根号;
+将结果写入文本msd.txt;
 
 ```
