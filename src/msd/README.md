@@ -1,7 +1,100 @@
 # MSD:均方根位移
 
+## 使用方法
+文件内时间步长，原子个数可任意
+```
+(venv1) C:\Users\Yan\Downloads\FFD\src\msd>python msd.py -h
+usage: msd.py [-h] [-o OUTPUT] input1 input2
+
+positional arguments:
+  input1                the name of input file 1
+  input2                the name of input file 2
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -o OUTPUT, --output OUTPUT
+                        the name of output file
+
+(venv1) C:\Users\Yan\Downloads\FFD\src\msd>python msd.py ./4-db-msd-cu.lammpstrj ./4-db-msd-db.lammpstrj
+result has been successfully written to msd.txt
+```
+
+## 测试结果
+
+小样例测试：
+File1
+```
+ITEM: TIMESTEP
+0
+ITEM: NUMBER OF ATOMS
+2
+ITEM: BOX BOUNDS pp pp pp
+-5.23605 54.2864
+1.40777 51.0098
+0.00696182 49.609
+ITEM: ATOMS id type xu yu zu
+ 1 1 1 2 3
+ 2 1 4 5 6
+ITEM: TIMESTEP
+1
+ITEM: NUMBER OF ATOMS
+2
+ITEM: BOX BOUNDS pp pp pp
+-5.23605 54.2864
+1.40777 51.0098
+0.00696182 49.609
+ITEM: ATOMS id type xu yu zu
+ 1 1 7 8 9
+ 2 1 10 11 12
+```
+ 
+File2
+```
+ITEM: TIMESTEP
+0
+ITEM: NUMBER OF ATOMS
+2
+ITEM: BOX BOUNDS pp pp pp
+-5.23605 54.2864
+1.40777 51.0098
+0.00696182 49.609
+ITEM: ATOMS id type xu yu zu
+ 1 1 13 14 15
+ 2 1 16 17 18
+ITEM: TIMESTEP
+1
+ITEM: NUMBER OF ATOMS
+2
+ITEM: BOX BOUNDS pp pp pp
+-5.23605 54.2864
+1.40777 51.0098
+0.00696182 49.609
+ITEM: ATOMS id type xu yu zu
+ 1 1 19 20 21
+ 2 1 22 23 24
+ ```
+ 
+计算结果msd.txt与预期相符
+```
+timestep distance_A_B
+1 20.784609690826528
+2 20.784609690826528
+```
+
+
+在timestep = 1的时候验算结果同样符合预期
+```
+python msd.py ./4-db-msd-cu.lammpstrj ./4-db-msd-db.lammpstrj
+文件1的(x_min, y_min, z_min) = (20.5647 24.2907 24.4791)
+文件1的(x_max, y_max, z_max) = (28.4857 28.1269 25.1369)
+中心1=[24.5252 26.2088 24.808 ]
+文件2的(x_min, y_min, z_min) = (34.2643  10.3227   5.26964)
+文件2的(x_max, y_max, z_max) = (41.1058  14.7752   8.29968)
+中心2=[37.68505 12.54895  6.78466]
+距离为26.165128297040702
+```
+
 ## 输入文件
-4-db-msd-cu.lammpstrj：
 ```
 ITEM: TIMESTEP
 0
